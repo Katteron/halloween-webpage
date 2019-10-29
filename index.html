@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <!-- This is my spooky Halloween websitei-->
+<head>
+  <meta charset="utf-8">
+  <title>My Halloween Webpage</title>
+  <style>
+    body{
+      background-color: black;
+      color:white;
+    }
+    .spooky_writing {
+      font-family: Trattatello;
+      color: crimson;
+    }
+    
+    #myImage{
+      margin: auto;
+      display: block;
+    }
+  /* #cccccc is just a gray color. It is there incase the image doesn't work
+  */
+    .storm_background{
+      background-image: url("https://media.giphy.com/media/l0MYsKXbPmiVRxKQ8/giphy.gif");
+      background-repeat:no-repeat;
+      background-color: #cccccc; 
+    }
+    
+  </style>
+    
+  <script>
+  function monsterimg(sw){
+    var pic;
+    if (sw == 0){
+      pic = "pumpkin.png"
+      }
+    else if(sw == 1){
+      pic = "jackolantern.png"
+    }
+    else if(sw == 2) {
+      pic = "ghost.png"
+      }
+    else if(sw == 3){
+      pic = "frankenstein.png"
+      }
+    else{
+      pic = "witch.png"
+    }
+    document.getElementById ('myImage').src = pic;
+  }
+  </script>
+</head>
+
+<body>
+  <!-- music from  https://www.magle.dk/dark-music.html#halloween-present-->
+  <audio loop controls src="https://www.magle.dk/audio/darkmusic/frederik-magle-halloween-present.mp3"></audio>
+  <div class=storm_background>
+  <h1 class="spooky_writing" align ="center"><strong>My Spooky Halloween Website</strong></h1>
+  
+  <img id="myImage" src="witch.png" height ="150">
+  
+  
+  <p align="center">
+    <button type="button" onclick="monsterimg(0)">Pumpkin</button>
+    <button type="button" onclick="monsterimg(1)">Jack-o-Lantern</button>
+    <button type="button" onclick="monsterimg(2)">Ghost</button>
+    <button type="button" onclick="monsterimg(3)">Frankenstein</button>
+    <button type="button" onclick="monsterimg(4)">Witch</button>
+  </p>
+  <br>
+  </div>
+  
+  <h2 class="spooky_writing" align="center">Halloween History</h2>
+  <div class="spooky_writing">
+  <p align="center">
+    Halloween's origins date back to the ancient Celtic festival of Samhain (pronounced sow-in). 
+  During the Celtic festival of Samhain, people would light bonfires and wear costumes to ward off ghosts. 
+  The Celts, who lived 2,000 years ago in the area that is now Ireland, the United Kingdom and northern France, celebrated their new year on November 1.
+  </p>
+  </div>
+  
+  <h2 class="spooky_writing"><Strong>Great Halloween Movies</Strong></h2>
+  <ul>
+    <li><a target="blank" href="https://www.imdb.com/title/tt0107688/" alt="The Nightmare Before Christmas"><font color="darkorange">The Nightmare Before Christmas</font></a></li>
+    <li><a target="blank" href="https://www.imdb.com/title/tt1156398/" alt="Zombieland"><font color="yellow"> Zombieland</font></a></li>
+    <li><a target="blank" href="https://www.imdb.com/title/tt1502407/" alt="Halloween"><font color="white">Halloween</font></a></li>
+    <li><a target="blank" href="https://www.imdb.com/title/tt0087800/" alt="Nightmare on Elm Street"><font color="darkorange">Nightmare on Elm Street</font></a></li>
+    <li><a target="blank" href="https://www.imdb.com/title/tt0387564/" alt="Saw"><font color="yellow">Saw</font></a></li>
+    <li><a target="blank" href="https://www.imdb.com/title/tt6644200/" alt="The Quiet Place"><font color="white">The Quiet Place</font></a></li>
+  </ul>
+
+<h2 class="spooky_writing"><strong>Favorite Haloween Costumes</strong></h2>
+<ol>
+  <li>Mummy</li>
+  <li>Zombie</li>
+  <li>Skeleton</li>
+  <li>Mermaid</li>
+  <li>Vampire</li>
+  <li>Disney Princess</li>
+  <li>Greek Deity</li>
+  <li>TV Show Character</li>
+  <li>Batman</li>
+  <li>Historical Figure</li>
+  
+</ol>
+</body>
+</html>
